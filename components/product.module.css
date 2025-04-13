@@ -1,0 +1,144 @@
+.productWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ye-spacing-rem-small);
+  padding: var(--ye-spacing-rem-small) 0;
+}
+
+.productNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productCount {
+  display: flex;
+  gap: var(--ye-spacing-rem-xhuge);
+  align-items: center;
+  font-size: var(--ye-font-size-small);
+
+}
+
+.count {
+    font-weight: var(--ye-font-weight-black);
+    text-transform: uppercase;
+}
+
+.toggleFilterButton {
+    display: flex;
+    align-items: center;
+    gap: var(--ye-spacing-rem-tiny);
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--color-grey-l1);
+}
+
+.filterArrow {
+    height: var(--ye-font-size-large);
+}
+
+.productSection {
+  display: flex;
+  gap: var(--ye-spacing-rem-small);
+  width: var(--full-size);
+}
+
+.productContainer {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ye-spacing-rem-small);
+  justify-content: space-around;
+}
+
+.filterHeader {
+  font-size: var(--ye-spacing-rem-normal);
+  text-transform: uppercase;
+  font-weight: var(--ye-font-weight-bold);
+  flex: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownToggle {
+  background: none;
+  border: none;
+  font-size: var(--ye-font-size-small);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownToggle .arrow {
+  font-size: var(--ye-font-size-small);
+  margin-left: var(--ye-spacing-rem-tiny);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-canvas);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 0;
+  margin: 10px 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dropdownItem {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownItem:hover {
+  color: var(--color-grey);
+}
+
+.dropdownItem.selected {
+  font-weight: bold;
+}
+
+.dropdownItem .checkmark {
+  margin-right: 8px;
+  color: black;
+}
+
+.dropdownMenu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .productContainer {
+    justify-content: center;
+  }
+
+  .dropdown {
+    flex: 1;
+  }
+
+  .productSection {
+    flex-direction: column;
+  }
+}
+
+

@@ -1,0 +1,15 @@
+.root {
+  background-color: var(--color-grey-l1);
+  border: 0;
+}
+
+.isHorizontal {
+    width: var(--full-size);
+    height: 1px;
+}
+
+  .isVertical {
+    align-self: stretch;
+    width: 1px;
+    min-height: var(--full-size);
+  }

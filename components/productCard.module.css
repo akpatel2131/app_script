@@ -1,0 +1,70 @@
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ye-spacing-rem-small);
+    max-width: 250px;
+}
+
+.cardImage {
+    width: var(--full-size);
+    object-fit: contain;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ye-spacing-rem-tiny);
+    max-width: 85%;
+}
+
+.productName {
+    font-weight: var(--ye-font-weight-bold);
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.siginSubtitle {
+    font-size: var(--ye-font-size-small);
+    color: var(--color-grey); 
+}
+
+.likeIcon {
+    width: var(--ye-font-size-large);
+}
+
+.likeButton {
+    margin-bottom: var(--ye-spacing-rem-xsmall);
+    margin-right: var(--ye-spacing-rem-tiny);
+}
+
+.isLiked {
+    fill: red;
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .productCard {
+      max-width: 150px;
+    }
+
+    .productName {
+        font-size: var(--ye-font-size-small);
+    }
+
+    .siginSubtitle {
+        font-size: var(--ye-font-size-xsmall);
+    }
+
+    .likeButton {
+        margin-bottom: var(--ye-spacing-rem-tiny);
+    }
+  }

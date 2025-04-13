@@ -1,0 +1,66 @@
+.container {
+  width: var(--full-size);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: var(--full-size);
+  padding: 0 0 var(--ye-spacing-rem-xsmall);
+
+  transition: 0.3s ease-in-out;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+
+  width: var(--full-size);
+
+  border-radius: var(--ye-spacing-rem-xsmall);
+
+  @media (--media-max-sm) {
+    font-size: var(--ye-font-size-small);
+  }
+}
+
+.arrowPosition {
+  justify-content: flex-start;
+}
+
+.dropdownIcon {
+  width: var(--ye-font-size-normal);
+  height: auto;
+  margin: 0 var(--ye-spacing-rem-xsmall);
+  transition: 0.3s linear;
+}
+
+.content {
+  padding: var(--ye-spacing-rem-small) var(--ye-spacing-rem-small) var(--ye-spacing-rem-large);
+  font-size: var(--ye-font-size-normal);
+
+  @media (--media-max-sm) {
+    font-size: var(--ye-font-size-xsmall);
+  }
+}
+
+.panel {
+  margin: var(--ye-font-size-xsmall) 0;
+  border-radius: var(--ye-spacing-rem-xsmall);
+}
+
+.activeItem .dropdownIcon {
+  transform: rotate(-180deg);
+}
+
+.header {
+  width: var(--full-size);
+}
+
+.noExpand {
+  cursor: default;
+}
+  
